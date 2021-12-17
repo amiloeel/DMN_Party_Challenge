@@ -8,20 +8,13 @@ public class Pessoa implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Nome")
-	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Data de Nascimento")
+	@org.kie.api.definition.type.Label("Data de Nascimento")
 	private java.util.Date nasc;
 
+	@org.kie.api.definition.type.Label(value = "Nome")
+	private java.lang.String nome;
+
 	public Pessoa() {
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
 	}
 
 	public java.util.Date getNasc() {
@@ -32,9 +25,17 @@ public class Pessoa implements java.io.Serializable {
 		this.nasc = nasc;
 	}
 
-	public Pessoa(java.lang.String name, java.util.Date nasc) {
-		this.name = name;
+	public java.lang.String getNome() {
+		return this.nome;
+	}
+
+	public void setNome(java.lang.String nome) {
+		this.nome = nome;
+	}
+
+	public Pessoa(java.util.Date nasc, java.lang.String nome) {
 		this.nasc = nasc;
+		this.nome = nome;
 	}
 
 }
