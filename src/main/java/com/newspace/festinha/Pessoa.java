@@ -6,12 +6,35 @@ package com.newspace.festinha;
 
 public class Pessoa implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Pessoa() {
-    }
+	@org.kie.api.definition.type.Label(value = "Nome")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Data de Nascimento")
+	private java.util.Date nasc;
 
+	public Pessoa() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.util.Date getNasc() {
+		return this.nasc;
+	}
+
+	public void setNasc(java.util.Date nasc) {
+		this.nasc = nasc;
+	}
+
+	public Pessoa(java.lang.String name, java.util.Date nasc) {
+		this.name = name;
+		this.nasc = nasc;
+	}
 
 }
