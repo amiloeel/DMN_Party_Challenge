@@ -6,6 +6,8 @@ PARTY CHALLENGE
 
 ### Desenvolvido utilizando tecnologias KIE / Red Hat (RHPAM)
 
+Lista de nomes proibidos na festa: "Fulano", "Cicrano" e "Beltrano"
+
 --------------------------------------------------
 
 #### Screenshots:
